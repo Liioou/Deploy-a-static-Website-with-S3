@@ -12,7 +12,7 @@ This project consist in deploying a static website with the target being a S3 bu
 
 
 
-<h2>Environments Used </h2>
+<h2>Services Used </h2>
 
 - <b>AWS Route 53</b>
 
