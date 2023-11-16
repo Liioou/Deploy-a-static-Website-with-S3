@@ -49,6 +49,11 @@ Observe the wiped disk:  <br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
+
+<img src="https://i.imgur.com/PHVWWr6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+
 <!--
  ```diff
 - text in red
