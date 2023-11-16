@@ -1,17 +1,12 @@
-On route 53 purchase a domain name of the website you are trying to create
+On S3 create the bucket (Name must match the domaine name that will be used for this project)
 
 
 
-create the bucket (Name must match the domaine name you will be jusing for this project)
+uncheck "block public access" to make bucket public so that users can have access to the contain of the bucket
 
 
 
-
-uncheck "block public access" to make our pucket public so that users can have access to the contain of our bucket
-
-
-
-once your bucket is created, upload your "index.html" file
+once bucket is created, upload "index.html" file
 
 
 
@@ -19,11 +14,11 @@ Under "Properties", scroll all the way down and enable hosting a static website
 
 
 
+in the same setting where it says "Index document", put the name of the index.html file that was just uploaded and save changes
 
-in the same setting where it says "Index document", put the name of the index.html file you just uploaded and save changes
 
 
-under "Permission", edit the s3 policy bucket to give permission/access to your bucket
+under "Permission", edit the s3 policy bucket to give permission/access to bucket
 
 
 
@@ -36,13 +31,12 @@ on route 53 purchase the domain name of the website you are trying to create
 
 
 
-<or if already have a registered domaine make sure subdomain match the bucket name you are using to create your static website
+< or if already have a registered domaine make sure subdomain match the bucket name you are using to create the static website >
 
 
 
 
-
-next create a record and select Alias. choose "Alias to S3 website endpoint" and select the region associated to your bucket
+next create a record and select Alias. choose "Alias to S3 website endpoint" and select the region associated to the bucket
 
 
 
