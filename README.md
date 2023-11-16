@@ -50,7 +50,89 @@ Observe the wiped disk:  <br/>
 </p>
 
 
-<img src="https://i.imgur.com/PHVWWr6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+
+<p align="center">
+On S3 create the bucket (Name must match the domaine name that will be used for this project) <br/>
+<br />
+<br />
+
+uncheck "block public access" to make bucket public so that users can have access to the contain of the bucket
+<br />
+<br />
+
+
+once bucket is created, upload "index.html" file
+
+
+<img src="https://i.imgur.com/8sYqRJh.png" height="80%" width="80%" alt="Create static website steps"/>
+<br />
+<br />
+
+
+
+
+Under "Properties", scroll all the way down and enable hosting a static website
+<br />
+<br />
+
+
+
+in the same setting where it says "Index document", put the name of the index.html file that was just uploaded and save changes
+
+
+<img src="https://i.imgur.com/ptszXKq.png" height="80%" width="80%" alt="Create static website steps"/>
+<br />
+<br />
+
+
+
+under "Permission", edit the s3 policy bucket to give permission/access to bucket
+<br />
+<br />
+
+
+Bucket should now be public 
+
+
+
+<img src="https://i.imgur.com/yZTe3Oi.png" height="80%" width="80%" alt="Create static website steps"/>
+<br />
+<br />
+
+
+
+on route 53 purchase the domain name of the website you are trying to create 
+<br />
+<br />
+
+
+< or if already have a registered domaine make sure subdomain match the bucket name you are using to create the static website >
+<br />
+<br />
+
+
+
+
+next create a record and select Alias. choose "Alias to S3 website endpoint" and select the region associated to the bucket
+
+<img src="https://i.imgur.com/PHVWWr6.png" height="80%" width="80%" alt="Create static website steps"/>
+<br />
+<br />
+
+
+Test it
+
+
+
+<img src="https://i.imgur.com/GGs7oET.png" height="80%" width="80%" alt="Create static website steps"/>
+
+
+
+create image our your instance and test it
+
+
 
 
 
